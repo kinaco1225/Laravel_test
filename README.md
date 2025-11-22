@@ -16,8 +16,7 @@
 - WSL2 + Docker（開発環境）
 
 ## ER図
-＜ーーー 作成したER図の画像をここに貼る ーーー＞
-（例）  
+<img width="471" height="651" alt="drawio" src="https://github.com/user-attachments/assets/42425f0c-daf3-4b98-b801-5fc84bc788f6" />
 ## URL
 - 開発環境: http://localhost/
 - ログイン画面: http://localhost/login
