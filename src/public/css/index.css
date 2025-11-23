@@ -1,0 +1,140 @@
+.contact__content {
+  margin: 0 auto;
+  max-width: 1230px;
+  text-align: center
+}
+
+.contact__heading {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact__heading h2 {
+  font-weight: normal;
+  font-size: 22px;
+  color: #6b5645;
+}
+
+
+/* table  */
+.contact-table {
+  width: 70%;
+  font-size: 15px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-table th {
+  width: 25%;
+  padding: 15px 10px;
+  font-weight: normal;
+  color: #5c4a3b;
+  vertical-align: top;
+  
+}
+
+.contact-table td {
+  padding: 10px 0;
+}
+
+.required {
+  color: #c44;
+  margin-left: 3px;
+}
+
+/* building addles email */
+.input__text {
+  background-color: #f9f9f9;
+  border: 1px solid #e3e3e3;
+  width: 100%;
+  padding: 10px;
+}
+
+
+/* input name  */
+.input__text-name {
+  display: flex;
+}
+
+.input__text-lastname,
+.input__text-firstname{
+  background-color: #f9f9f9;
+  border: 1px solid #e3e3e3;
+  width: 48%;
+  padding: 10px;
+}
+
+.input__text-firstname {
+  margin-left: 30px;
+}
+
+/* input radio */
+.input__radio label {
+  margin-right: 70px;
+  accent-color: #7a6652;
+  color: #6b5645;
+}
+
+.input__radio :first-child {
+  margin-left: 5px;
+}
+
+/* input tel */
+.input__tel {
+  display: flex;
+  align-items: center;
+}
+
+.input__tel1,
+.input__tel2,
+.input__tel3 {
+  background-color: #f9f9f9;
+  border: 1px solid #e3e3e3;
+  width: 33%;
+  padding: 10px;
+}
+
+.input__tel span {
+  margin: 0 10px;
+}
+
+/* select */
+.contact-table td select {
+  background-color: #f9f9f9;
+  border: 1px solid #e3e3e3;
+  width: 50%;
+  padding: 10px;
+}
+
+/* textarea */
+.contact-table td textarea {
+  background-color: #f9f9f9;
+  border: 1px solid #e3e3e3;
+  width: 100%;
+  height: 120px;
+}
+
+/* error */
+.form__error {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* button */
+.form__button {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.form__button-submit {
+  background-color: #7a6652;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}

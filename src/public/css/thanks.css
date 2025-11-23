@@ -1,0 +1,38 @@
+
+.thanks__background {
+  position: relative;
+  text-align: center;
+  font-size: 300px;
+  color: rgba(90, 74, 61, 0.05);
+  font-family: "Times New Roman", serif;
+  user-select: none;
+  z-index: 1;
+  margin: 100px auto;
+}
+
+.thanks__content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.thanks__message {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #5a4a3d;
+  letter-spacing: 3px;
+}
+
+.thanks__button {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #7a6652;
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 3px;
+  font-size: 14px;
+}

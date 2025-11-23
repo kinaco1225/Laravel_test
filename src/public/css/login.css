@@ -1,0 +1,63 @@
+/* Registerページ全体 */
+.login-container {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  color: #6b5645;
+  font-family: "Hiragino Sans", "Yu Gothic", ;
+  background-color: #e9dfd5
+}
+
+.login-title {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+/* 白いフォーム枠 */
+.login-box {
+  width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px 60px;
+  border-radius: 8px;
+  border: 2px solid #e0d8d0;
+}
+
+/* ラベル */
+.form-label {
+  display: block;
+  text-align: left;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+/* 入力欄 */
+.form-input {
+  width: 100%;
+  padding: 12px 10px;
+  background-color: #f4f1ef;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* ボタン */
+.submit-btn {
+  margin-top: 30px;
+  padding: 10px 30px;
+  background-color: #7a6652;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.error-text {
+  color: red;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
