@@ -1,9 +1,13 @@
 # Laravel_test（お問い合わせ管理アプリ）
 
 ## 環境構築
-- Docker のビルドからマイグレーション、シーディングまでを行い開発環境を構築  
-- `composer install`、`npm install` により依存関係をインストール  
-- `.env` の設定後 `php artisan key:generate`  
+- Docker のビルドからマイグレーション、シーディングまでを行い開発環境を構築
+- `docker-compose up -d --build` コンテナが作成
+- `docker-compose exec php bash` PHPコンテナ内にログイン
+- `composer install` をインストール
+- `cp .env.example .env` ファイルをコピー(`.env`作成)
+- `.env` の設定変更
+- `php artisan key:generate`  アプリキー生成
 - `php artisan migrate --seed` によりデータベースをセットアップ  
 - `php artisan serve` でローカルサーバー起動
 
