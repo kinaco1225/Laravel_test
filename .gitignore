@@ -1,0 +1,12 @@
+# Ignore MySQL data
+docker/mysql/data/
+docker/mysql/data/*
+docker/mysql/data
+
+# Ignore logs
+docker/*.log
+
+# Ignore cache/temporary files
+*.env.backup
+
+

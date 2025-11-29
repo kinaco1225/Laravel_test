@@ -20,7 +20,7 @@ RUN docker-php-ext-configure gd \
   --with-jpeg \
   --with-webp
 
-# 必要な PHP 拡張のインストール
+# 必要な PHP 拡張のインストール@
 RUN docker-php-ext-install \
   pdo_mysql \
   zip \
