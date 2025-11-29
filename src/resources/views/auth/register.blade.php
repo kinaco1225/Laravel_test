@@ -12,7 +12,7 @@
   @if (session('success'))
   <p class="success-message">{{ session('success') }}</p>
   @endif
-
+  
   <div class="register-box">
     <form action="/register" method="POST">
       @csrf

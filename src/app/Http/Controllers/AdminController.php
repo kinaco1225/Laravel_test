@@ -32,7 +32,7 @@ class AdminController extends Controller
         ->genderSearch($gender)
         ->CategorySearch($category_id)
         ->DateSearch($date)
-        ->paginate(10);
+        ->paginate(8);
 
         return view('admin.index', compact('contacts', 'categories','keyWord','gender','category_id', 'date'));
     }
