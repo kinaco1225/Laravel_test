@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Exports\ContactsExport;
 use Maatwebsite\Excel\Facades\Excel;
+use Maatwebsite\Excel\Excel as ExcelFormat;
 use App\Models\Contact;
 use App\Models\Category;
 use Illuminate\Http\Request;
@@ -43,9 +44,21 @@ class AdminController extends Controller
         return redirect()->route('admin.index')->with('success', '削除しました。');
     }
 
-    public function export(Request $request)
+    /* public function export(Request $request)
     {
         return Excel::download(new ContactsExport($request), 'contacts.xlsx');
-    }
+    } */
 
+    public function export(Request $request)
+    {
+        return Excel::download(
+            new ContactsExport($request),
+            'contacts.csv',
+            ExcelFormat::CSV,
+            [
+                'Content-Type' => 'text/csv;charset=UTF-8',
+                'Content-Encoding' => 'UTF-8',
+            ]
+        );
+    }
 }

@@ -89,11 +89,6 @@
               {{ $category->content }}
             </option>
             @endforeach
-            <!-- <option value="商品のお届けについて" {{ old('category') == '商品のお届けについて' ? 'selected' : '' }}>商品のお届けについて</option>
-            <option value="商品の交換について" {{ old('category') == '商品の交換について' ? 'selected' : '' }}>商品の交換について</option>
-            <option value="商品トラブル" {{ old('category') == '商品トラブル' ? 'selected' : '' }}>商品トラブル</option>
-            <option value="ショップへのお問い合わせ" {{ old('category') == 'ショップへのお問い合わせ' ? 'selected' : '' }}>ショップへのお問い合わせ</option>
-            <option value="その他" {{ old('category') == 'その他' ? 'selected' : '' }}>その他</option> -->
           </select>
           @error('category_id')
           <div class="form__error">{{ $message }}</div>

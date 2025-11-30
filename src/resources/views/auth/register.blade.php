@@ -28,7 +28,7 @@
       @error('email')
       <p class="error-text">{{ $message }}</p>
       @enderror
-      <input type="email" name="email" class="form-input" value="{{ old('email') }}">
+      <input type="text" name="email" class="form-input" value="{{ old('email') }}">
 
 
       <label class="form-label">パスワード</label>

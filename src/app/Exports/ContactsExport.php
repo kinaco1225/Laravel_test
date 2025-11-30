@@ -4,9 +4,21 @@ namespace App\Exports;
 
 use Maatwebsite\Excel\Concerns\FromCollection;
 use App\Models\Contact;
+use Maatwebsite\Excel\Concerns\WithCustomCsvSettings;
 
-class ContactsExport implements FromCollection
+class ContactsExport implements FromCollection, WithCustomCsvSettings
 {
+    public function getCsvSettings(): array
+    {
+        return [
+            'delimiter' => ',',
+            'enclosure' => '"',
+            'line_ending' => "\r\n",
+            'use_bom' => true,   // ★ これが BOM 付与
+            'include_separator_line' => false,
+        ];
+    }
+
     protected $request;
 
     public function __construct($request)
